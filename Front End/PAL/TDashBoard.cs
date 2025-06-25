@@ -16,5 +16,19 @@ namespace Front_End.PAL
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ASchedule a = new ASchedule();
+            a.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TDataEntry t = new TDataEntry();
+            t.Show();
+            this.Hide();
+        }
     }
 }

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAL\LogTname.cs" />
     <Compile Include="BAL\Student.cs" />
     <Compile Include="BAL\Teacher.cs" />
     <Compile Include="DAL\DBQuery.cs" />

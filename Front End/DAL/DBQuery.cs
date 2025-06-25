@@ -34,7 +34,7 @@ namespace Front_End.DAL
             // Table List
             string[] tables = {
         "CLASS", "STUDENT_T", "SUBJECT_T", "FACULTY", "TEST",
-        "StdSub", "FAC_SUB", "TESTSTD", "RESULT", "ClassSec", "ClassSub"
+        "StdSub", "FAC_SUB", "TESTSTD", "RESULT", "ClassSec", "ClassSub","Schedule"
     };
 
             foreach (string tableName in tables)
@@ -223,6 +223,144 @@ namespace Front_End.DAL
                 adapter.Fill(dt);
                 return dt;
         }
+        public static string teacherName(string email)
+        {
+            string qry = "Select fName From FACULTY Where Email=@email";
+            SqlConnection connection = CreateConnection();
+            SqlCommand command = new SqlCommand(qry, connection);
+            command.Parameters.AddWithValue("@email", email);
+            object name = command.ExecuteScalar();
+            return name.ToString();
+        }
+        public static SqlDataReader Tsub(string tname)
+        {
+            string qry = "SELECT DISTINCT S.SubName FROM SUBJECT_T S WHERE S.SubID IN( SELECT FS.SubID FROM FAC_SUB FS INNER JOIN FACULTY F ON F.EmpID = FS.EmpID WHERE F.fName = @tname)";
+
+            SqlConnection connection = CreateConnection();
+            SqlCommand command = new SqlCommand(qry, connection);
+            command.Parameters.AddWithValue("@tname", tname);
+            return command.ExecuteReader();
+        }
+        public static bool checkSchedule(int Class,string sec,string test,string sub,int tmarks)
+        {
+            string qry = "Select count(*) From Schedule where Class=@Class AND Section=@sec AND Subject_Name=@sub AND Test_Name=@test AND Total_Marks=@tmarks";
+            SqlConnection connection = CreateConnection();
+            SqlCommand command = new SqlCommand(qry, connection);
+            command.Parameters.AddWithValue("@Class", Class);
+            command.Parameters.AddWithValue("@sec",sec);
+            command.Parameters.AddWithValue("@sub", sub);
+            command.Parameters.AddWithValue("@test", test);
+            command.Parameters.AddWithValue("@tmarks", tmarks);
+
+            object a = command.ExecuteScalar();
+
+            if (Convert.ToInt16(a) != 0)
+            {
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+        }
+        public static bool checkStudent(int id,string name)
+        {
+            string qry = "Select count(*) From STUDENT_T where St_ID=@id AND SName=@name";
+            SqlConnection connection = CreateConnection();
+            SqlCommand command = new SqlCommand(qry, connection);
+            command.Parameters.AddWithValue("@id", id);
+            command.Parameters.AddWithValue("@name", name);
+            int count = Convert.ToInt32(command.ExecuteScalar());
+            if (count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+
+            }
+        }
+        public static void  Result(int id,string name,int Class,string sec,string sub,string test,int tmark,int gmark,string per,string status)
+        {
+            string qry = "Insert into RESULT Values(@id,@name,@Class,@sec,@sub,@test,@tmark,@gmark,@per,@status)";
+            SqlConnection connection = CreateConnection();
+            SqlCommand command = new SqlCommand(qry,connection);
+            command.Parameters.AddWithValue("@id", id);
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@Class", Class);
+            command.Parameters.AddWithValue("@sec", sec);
+            command.Parameters.AddWithValue("@sub", sub);
+            command.Parameters.AddWithValue("@test", test);
+            command.Parameters.AddWithValue("@tmark", tmark);
+            command.Parameters.AddWithValue("@gmark", gmark);
+            command.Parameters.AddWithValue("@per", per);
+            command.Parameters.AddWithValue("@status", status);
+            command.ExecuteNonQuery();
+        }
+        public static DataTable GetResultData(int Class,string sec,string sub,string test)
+        {
+            string qry = "SELECT * FROM RESULT Where Class=@Class AND Section=@sec AND Subject_Name=@sub AND Test_Name = @test";
+            SqlConnection connection = CreateConnection();
+                SqlCommand command = new SqlCommand(qry, connection);
+            command.Parameters.AddWithValue("@Class", Class);
+            command.Parameters.AddWithValue("@sec", sec);
+            command.Parameters.AddWithValue("@sub", sub);
+            command.Parameters.AddWithValue("@test", test);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+                return dt;
+        }
+        public static void DeleteResult(int studentId, string testName, string subjectName)
+        {
+            string qry = "DELETE FROM RESULT WHERE Student_ID = @sid AND Test_Name = @test AND Subject_Name = @sub";
+            using (SqlConnection connection = CreateConnection())
+            {
+                SqlCommand cmd = new SqlCommand(qry, connection);
+                cmd.Parameters.AddWithValue("@sid", studentId);
+                cmd.Parameters.AddWithValue("@test", testName);
+                cmd.Parameters.AddWithValue("@sub", subjectName);
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public static void UpdateResult(int oldSid, string oldTest, string oldSub,int sid, string name, int cname, string sec, string sub, string test, int pmarks, int gmarks, string percent, string status)
+        {
+            string qry = @"UPDATE RESULT 
+                   SET Student_ID = @sid,
+                       Student_Name = @name,
+                       Class = @class,
+                       Section = @sec,
+                       Subject_Name = @sub,
+                       Test_Name = @test,
+                       Passing_Marks = @pmarks,
+                       Gain_Marks = @gmarks,
+                       Percentage = @percent,
+                       Status = @status
+                   WHERE Student_ID = @oldSid AND Test_Name = @oldTest AND Subject_Name = @oldSub";
+
+            using (SqlConnection connection = CreateConnection())
+            {
+                SqlCommand cmd = new SqlCommand(qry, connection);
+                cmd.Parameters.AddWithValue("@sid", sid);
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@class", cname);
+                cmd.Parameters.AddWithValue("@sec", sec);
+                cmd.Parameters.AddWithValue("@sub", sub);
+                cmd.Parameters.AddWithValue("@test", test);
+                cmd.Parameters.AddWithValue("@pmarks", pmarks);
+                cmd.Parameters.AddWithValue("@gmarks", gmarks);
+                cmd.Parameters.AddWithValue("@percent", percent);
+                cmd.Parameters.AddWithValue("@status", status);
+                cmd.Parameters.AddWithValue("@oldSid", oldSid);
+                cmd.Parameters.AddWithValue("@oldTest", oldTest);
+                cmd.Parameters.AddWithValue("@oldSub", oldSub);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
 
     }
 }

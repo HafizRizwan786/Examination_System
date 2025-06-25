@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Front_End.BAL;
+
 
 namespace Front_End.PAL
 {
@@ -53,9 +56,15 @@ namespace Front_End.PAL
                 }
                 else if (cmbSelect.SelectedItem.ToString() == "Teacher")
                 {
+                    // Storing Tname Globally
+                    string tname = DAL.DBQuery.teacherName(txtEmail.Text);
+                    LogTname.Tname = tname;
+
                     TDashBoard t = new TDashBoard();
                     t.Show();
                     this.Hide();
+
+                   
                 }
                 else
                 {
@@ -66,6 +75,8 @@ namespace Front_End.PAL
             {
                 MessageBox.Show("Something Went Wrong!!!!");
             }
+
+
         }
     }
 }
