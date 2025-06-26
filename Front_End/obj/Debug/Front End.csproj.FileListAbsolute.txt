@@ -1,0 +1,102 @@
+C:\OOPs\Front End\Front End\bin\Debug\Front End.exe.config
+C:\OOPs\Front End\Front End\bin\Debug\Front End.exe
+C:\OOPs\Front End\Front End\bin\Debug\Front End.pdb
+C:\OOPs\Front End\Front End\obj\Debug\Front End.csprojAssemblyReference.cache
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.AApproval.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.ADashBoard.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.AResult.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.ASchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.ASectionvise.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.AStudentvise.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.ASubjectVise.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.ATestvise.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.Home.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.LoginForm.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.SDashBoard.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.SResult.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.SSchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TAddData.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TAddSchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TDashBoard.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TDataEntry.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TDelData.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TDelSchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TEditData.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TEditSchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TSchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TUpdateData.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.TUpdateSchedule.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.Properties.Resources.resources
+C:\OOPs\Front End\Front End\obj\Debug\Front End.csproj.GenerateResource.cache
+C:\OOPs\Front End\Front End\obj\Debug\Front End.csproj.CoreCompileInputs.cache
+C:\OOPs\Front End\Front End\obj\Debug\Front End.exe
+C:\OOPs\Front End\Front End\obj\Debug\Front End.pdb
+C:\OOPs\Front End\Front End\obj\Debug\Front_End.PAL.ChangePassword.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\bin\Debug\Front End.exe.config
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\bin\Debug\Front End.exe
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\bin\Debug\Front End.pdb
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front End.csprojResolveAssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.AApproval.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.ADashBoard.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.AResult.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.ASchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.ASectionvise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.AStudentvise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.ASubjectVise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.ATestvise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.ChangePassword.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.Home.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.LoginForm.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.SDashBoard.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.SResult.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.SSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TAddData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TAddSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TDashBoard.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TDataEntry.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TDelData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TDelSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TEditData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TEditSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TUpdateData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.PAL.TUpdateSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front_End.Properties.Resources.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front End.csproj.GenerateResource.Cache
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front End.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front End.exe
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front End\obj\Debug\Front End.pdb
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\bin\Debug\Front End.exe.config
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\bin\Debug\Front End.exe
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\bin\Debug\Front End.pdb
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front End.csprojResolveAssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.AApproval.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.ADashBoard.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.AResult.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.ASchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.ASectionvise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.AStudentvise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.ASubjectVise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.ATestvise.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.ChangePassword.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.Home.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.LoginForm.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.SDashBoard.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.SResult.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.SSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TAddData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TAddSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TDashBoard.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TDataEntry.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TDelData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TDelSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TEditData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TEditSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TUpdateData.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.PAL.TUpdateSchedule.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front_End.Properties.Resources.resources
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front End.csproj.GenerateResource.Cache
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front End.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front End.exe
+C:\Users\User\OneDrive\Desktop\New folder\Examination_System\Front_End\obj\Debug\Front End.pdb

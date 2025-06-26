@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CD3A750-7180-42BF-A394-10722C8998C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Front_End</RootNamespace>
+    <AssemblyName>Front End</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BAL\LogTname.cs" />
+    <Compile Include="BAL\Student.cs" />
+    <Compile Include="BAL\Teacher.cs" />
+    <Compile Include="DAL\DBQuery.cs" />
+    <Compile Include="PAL\AApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\AApproval.Designer.cs">
+      <DependentUpon>AApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\ADashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\ADashBoard.Designer.cs">
+      <DependentUpon>ADashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\AResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\AResult.Designer.cs">
+      <DependentUpon>AResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\ASchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\ASchedule.Designer.cs">
+      <DependentUpon>ASchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\ASectionvise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\ASectionvise.Designer.cs">
+      <DependentUpon>ASectionvise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\AStudentvise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\AStudentvise.Designer.cs">
+      <DependentUpon>AStudentvise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\ASubjectVise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\ASubjectVise.Designer.cs">
+      <DependentUpon>ASubjectVise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\ATestvise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\ATestvise.Designer.cs">
+      <DependentUpon>ATestvise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\SDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\SDashBoard.Designer.cs">
+      <DependentUpon>SDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\SResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\SResult.Designer.cs">
+      <DependentUpon>SResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\SSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\SSchedule.Designer.cs">
+      <DependentUpon>SSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TAddData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TAddData.Designer.cs">
+      <DependentUpon>TAddData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TAddSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TAddSchedule.Designer.cs">
+      <DependentUpon>TAddSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TDashBoard.Designer.cs">
+      <DependentUpon>TDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TDataEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TDataEntry.Designer.cs">
+      <DependentUpon>TDataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TDelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TDelData.Designer.cs">
+      <DependentUpon>TDelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TDelSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TDelSchedule.Designer.cs">
+      <DependentUpon>TDelSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TEditData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TEditData.Designer.cs">
+      <DependentUpon>TEditData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TEditSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TEditSchedule.Designer.cs">
+      <DependentUpon>TEditSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TSchedule.Designer.cs">
+      <DependentUpon>TSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TUpdateData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TUpdateData.Designer.cs">
+      <DependentUpon>TUpdateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAL\TUpdateSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAL\TUpdateSchedule.Designer.cs">
+      <DependentUpon>TUpdateSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PAL\AApproval.resx">
+      <DependentUpon>AApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\ADashBoard.resx">
+      <DependentUpon>ADashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\AResult.resx">
+      <DependentUpon>AResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\ASchedule.resx">
+      <DependentUpon>ASchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\ASectionvise.resx">
+      <DependentUpon>ASectionvise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\AStudentvise.resx">
+      <DependentUpon>AStudentvise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\ASubjectVise.resx">
+      <DependentUpon>ASubjectVise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\ATestvise.resx">
+      <DependentUpon>ATestvise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\SDashBoard.resx">
+      <DependentUpon>SDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\SResult.resx">
+      <DependentUpon>SResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\SSchedule.resx">
+      <DependentUpon>SSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TAddData.resx">
+      <DependentUpon>TAddData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TAddSchedule.resx">
+      <DependentUpon>TAddSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TDashBoard.resx">
+      <DependentUpon>TDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TDataEntry.resx">
+      <DependentUpon>TDataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TDelData.resx">
+      <DependentUpon>TDelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TDelSchedule.resx">
+      <DependentUpon>TDelSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TEditData.resx">
+      <DependentUpon>TEditData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TEditSchedule.resx">
+      <DependentUpon>TEditSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TSchedule.resx">
+      <DependentUpon>TSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TUpdateData.resx">
+      <DependentUpon>TUpdateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAL\TUpdateSchedule.resx">
+      <DependentUpon>TUpdateSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change password1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password person4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password person5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 11.48.18 AM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 12.23.40 PM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 11.20.17 AM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 11.19.15 AM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 10.45.48 AM1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-06-25 134507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-06-25 1345071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 9.01.28 PM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password person6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password person7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change password2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 10.03.39 PM %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-06-25 at 10.03.39 PM %281%291.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
